@@ -8,11 +8,11 @@ setup(
     packages=find_packages(),
     author="megadose",
     author_email="megadose@protonmail.com",
-    install_requires=["termcolor","bs4","httpx","trio","argparse","tqdm"],
+    install_requires=["termcolor","bs4","httpx","trio","argparse","tqdm", "phonenumbers"],
     description="ignorant allows you to check if a phone is used on different sites like snapchat.",
     include_package_data=True,
     url='http://github.com/megadose/ignorant',
-    entry_points = {'console_scripts': ['ignorant = ignorant.core:main']},
+    entry_points = {'console_scripts': ['ignorant = ignorant.json_output:main']},
     classifiers=[
         "Programming Language :: Python",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
